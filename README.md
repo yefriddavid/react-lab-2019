@@ -1,4 +1,4 @@
-This project will show you several helpful react functions that I sometimes forget.
+This project will show you several helpful react functions which I sometimes forget.
 
 ## React helpful functions
 

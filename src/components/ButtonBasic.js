@@ -1,12 +1,14 @@
 import React from 'react'
+import { Button } from 'reactstrap';
+
 
 const ButtonBasic = ({callback}) => {
 
     return (
-            <button className="Button__add" onClick={callback}>
+            <Button color="danger" onClick={callback}>
                 {console.log("rendered simple button")}
-                Add one more simple!
-            </button>
+                Add one more from <b>simple</b>!
+            </Button>
         );
 
 };

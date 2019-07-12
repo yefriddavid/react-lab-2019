@@ -1,16 +1,17 @@
 import React from 'react'
+import { Button } from 'reactstrap';
 
-const Button = React.memo(({callback}) => {
+const ButtonMemo = React.memo(({callback}) => {
 
     return (
-            <button className="Button__add" onClick={callback}>
+            <Button type="info" className="Button__add" onClick={callback}>
                 {console.log("Renderd memo button")}
-                Add one more!
-            </button>
+                Add one more from <b>memo</b>!
+            </Button>
         );
 
 });
 
 
-export default Button;
+export default ButtonMemo;
 

@@ -12,11 +12,13 @@ const LabApp = _ => {
 
   const addOneBasic = () => {
 
-    add(Math.random());
+    add(Counter + 1);
 
   };
 
   const addOne = useCallback( e => {
+
+    // add(Counter + 1); // It can not be done!
 
     add(Math.random());
 
@@ -29,7 +31,8 @@ const LabApp = _ => {
         current value: { Counter }
 
         <Button callback={(addOne)} />
-        <ButtonBasic callback={(addOne)} />
+        <br />
+        <ButtonBasic callback={(addOneBasic)} />
 
       </header>
     </div>
